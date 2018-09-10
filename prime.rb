@@ -9,7 +9,6 @@ def prime?(int)
       range = Array(2..int/2)
       range.each do |num| if int%num==0 return false
       end
-      end
     end
     return true
   end
