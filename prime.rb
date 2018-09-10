@@ -7,9 +7,14 @@ def prime?(int)
       return true
     else
       range = Array(2..int/2)
-      range.each do |num| if int%num==0 return false
+      start = 0
+      finish = range.size
+      while start < finish
+        if int%num==0 
+          return false
+        end
+        start +=1
       end
-    end
     return true
   end
 end
