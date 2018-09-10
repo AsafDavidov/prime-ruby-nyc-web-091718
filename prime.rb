@@ -10,7 +10,7 @@ def prime?(int)
       start = 0
       finish = range.size
       while start < finish
-        if int%num==0 
+        if int%range[start]==0 
           return false
         end
         start +=1
