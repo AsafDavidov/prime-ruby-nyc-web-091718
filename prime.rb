@@ -7,13 +7,13 @@ def prime?(int)
       return true
     else
       range = Array(2..int/2)
-      start = 0
+      current = 0
       finish = range.size
-      while start < finish
-        if int%range[start]==0 
+      while current < finish
+        if int%range[current]==0 
           return false
         end
-        start +=1
+        current +=1
       end
     end
     true
